@@ -6,12 +6,13 @@ using CodeMonkey.Utils;
 public class GameHandler : MonoBehaviour {
 
     [SerializeField] private HealthBar healthBar;
+    [SerializeField] public float rate = .005f;
 
 	private void Start () {
         float health = 1f;
         FunctionPeriodic.Create(() => {
             if (health > .01f) {
-                health -= .01f;
+                health -= rate;
                 healthBar.SetSize(health);
 
                 if (health < .3f) {
