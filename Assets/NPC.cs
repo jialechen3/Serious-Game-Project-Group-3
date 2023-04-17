@@ -2,10 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Npc : MonoBehaviour
+public class NPC : MonoBehaviour
 {
-    public Spawner spawner;
-    public bool collect = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -16,19 +14,11 @@ public class Npc : MonoBehaviour
     void Update()
     {
         
-            
-        
     }
 
-    void OnTriggerEnter2D(Collider2D other) {
-        
-        
-        collect = true;
-        
-        spawner.SpawnObject();
-        //if (other.gameObject.CompareTag("Player")) {
-            
-                
-        //}
+    private void OnTriggerEnter2D(Collider2D collision) {
+        if (collision.tag == "Player") {
+            Debug.Log("Hits");
+        }
     }
 }
