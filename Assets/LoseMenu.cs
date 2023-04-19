@@ -13,4 +13,8 @@ public class LoseMenu : MonoBehaviour
     {
         Application.Quit();
     }
+    public void Restart()
+    {
+        SceneManager.LoadScene("Scene_2");
+    }
 }
