@@ -39,7 +39,7 @@ public class Pause : MonoBehaviour
     }
     public void BackToMenu()
     {
-        SceneManager.LoadScene("Scene_1");
+        SceneManager.LoadScene("main_menu_scene");
     }
     public void Quit()
     {
