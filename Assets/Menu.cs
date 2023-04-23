@@ -6,6 +6,7 @@ public class Menu : MonoBehaviour
 {
     public void PlayGame()
     {
+        PersistentData.Instance.SetCoin(0);
         SceneManager.LoadScene("Scene_1");
     }
     public void Instruction()
