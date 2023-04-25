@@ -7,7 +7,7 @@ public class LoseMenu : MonoBehaviour
 {
     public void BackToMenu()
     {
-        SceneManager.LoadScene("Scene_1");
+        SceneManager.LoadScene("main_menu_scene");
     }
     public void Quit()
     {
@@ -15,6 +15,6 @@ public class LoseMenu : MonoBehaviour
     }
     public void Restart()
     {
-        SceneManager.LoadScene("Scene_2");
+        SceneManager.LoadScene("Scene_1");
     }
 }
