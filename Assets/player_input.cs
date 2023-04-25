@@ -6,8 +6,6 @@ public class player_input : MonoBehaviour
 {
     [SerializeField] Animator animator;
     private Rigidbody2D rb;
-    [SerializeField] const int SPEED = 10;
-    private float moveX;
 
     // Start is called before the first frame update
     void Start()
@@ -18,7 +16,7 @@ public class player_input : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-         moveX = Input.GetAxis("Horizontal");
+        float moveX = Input.GetAxisRaw(PAP.axisXinput);
         animator.SetFloat(PAP.moveX, moveX);
         bool isMoving = !Mathf.Approximately(moveX, 0f);
         animator.SetBool(PAP.isMoving, isMoving);
@@ -28,12 +26,10 @@ public class player_input : MonoBehaviour
     {
         float forceX = animator.GetFloat(PAP.forceX);
 
-        if (forceX != 0) 
-            rb.velocity = new Vector2(SPEED * moveX, rb.velocity.y); 
+        if (forceX != 0) rb.AddForce(new Vector2(forceX, 0) * Time.deltaTime); 
 
         float impulseY = animator.GetFloat(PAP.impulseY);
 
-        if (impulseY != 0) 
-            rb.AddForce(new Vector2(0, impulseY), ForceMode2D.Impulse);
+        if (impulseY != 0) rb.AddForce(new Vector2(0, impulseY), ForceMode2D.Impulse);
     }
 }

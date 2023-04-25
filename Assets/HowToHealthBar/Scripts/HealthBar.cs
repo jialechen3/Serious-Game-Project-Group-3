@@ -41,7 +41,7 @@ public class HealthBar : MonoBehaviour
             }
             else if(health < .01f)
             {
-                SceneManager.LoadScene("You_Lost_Scene");
+                SceneManager.LoadScene("Scene_3");
             }
             else
             {
