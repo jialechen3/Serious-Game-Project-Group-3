@@ -4,26 +4,26 @@ using UnityEngine;
 
 public class WordGenerator : MonoBehaviour {
 
-	private static string[] wordList = {   "sidewalk", "robin", "three", "protect", "periodic",
-									"somber", "majestic", "jump", "pretty", "wound", "jazzy",
-									"memory", "join", "crack", "grade", "boot", "cloudy", "sick",
-									"mug", "hot", "tart", "dangerous", "mother", "rustic", "economic",
-									"weird", "cut", "parallel", "wood", "encouraging", "interrupt",
-									"guide", "long", "chief", "mom", "signal", "rely", "abortive",
-									"hair", "representative", "earth", "grate", "proud", "feel",
-									"hilarious", "addition", "silent", "play", "floor", "numerous",
-									"friend", "pizzas", "building", "organic", "past", "mute", "unusual",
-									"mellow", "analyse", "crate", "homely", "protest", "painstaking",
-									"society", "head", "female", "eager", "heap", "dramatic", "present",
-									"sin", "box", "pies", "awesome", "root", "available", "sleet", "wax",
-									"boring", "smash", "anger", "tasty", "spare", "tray", "daffy", "scarce",
-									"account", "spot", "thought", "distinct", "nimble", "practise", "cream",
-									"ablaze", "thoughtless", "love", "verdict", "giant"    };
+	private static string[] wordList = {   "Homelessness", "can", "be", "caused", "by", "Family", "violence",
+"A", "shortage", "of", "affordable", "housing",
+"Physical", "or", "mental", "health", "issues",
+"Unemployment", "or", "job", "loss",
+"Drug", "and", "alcohol", "abuse", "and", "addiction",
+"Family", "and", "relationship", "breakdown",
+"Not", "feeling", "safe", "at", "home"  };
 
-	public static string GetRandomWord ()
+	public static string GtRandomWord ()
 	{
 		int randomIndex = Random.Range(0, wordList.Length);
 		string randomWord = wordList[randomIndex];
+
+		return randomWord;
+	}
+
+	public static string GetNextWord (int index)
+	{
+		
+		string randomWord = wordList[index];
 
 		return randomWord;
 	}

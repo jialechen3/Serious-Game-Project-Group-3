@@ -10,12 +10,13 @@ public class WordManager : MonoBehaviour {
 
 	private bool hasActiveWord;
 	private Word activeWord;
+	private int index = 0;
 
 	public void AddWord ()
 	{
-		Word word = new Word(WordGenerator.GetRandomWord(), wordSpawner.SpawnWord());
+		Word word = new Word(WordGenerator.GetNextWord(index), wordSpawner.SpawnWord());
 		Debug.Log(word.word);
-
+		index = index + 1;
 		words.Add(word);
 	}
 
