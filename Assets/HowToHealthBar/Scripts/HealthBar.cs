@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 using CodeMonkey.Utils;
+using UnityEngine.SceneManagement;
+
 
 public class HealthBar : MonoBehaviour {
 
@@ -29,9 +31,6 @@ public class HealthBar : MonoBehaviour {
                         SetColor(Color.red);
                     }
                 }
-<<<<<<< HEAD
-            } else {
-=======
             }
             else if(health < .01f)
             {
@@ -39,7 +38,6 @@ public class HealthBar : MonoBehaviour {
             }
             else
             {
->>>>>>> main
                 health = 1f;
                 SetColor(Color.red);
             }
