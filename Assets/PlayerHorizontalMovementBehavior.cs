@@ -5,7 +5,7 @@ using UnityEngine;
 public class PlayerHorizontalMovementBehavior : StateMachineBehaviour
 {
     float moveX;
-    public float runSpeed = 10f;
+    public float runSpeed = 100f;
     // OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
     //override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     //{

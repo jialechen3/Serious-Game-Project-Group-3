@@ -29,7 +29,17 @@ public class HealthBar : MonoBehaviour {
                         SetColor(Color.red);
                     }
                 }
+<<<<<<< HEAD
             } else {
+=======
+            }
+            else if(health < .01f)
+            {
+                SceneManager.LoadScene("You_Lost_Scene");
+            }
+            else
+            {
+>>>>>>> main
                 health = 1f;
                 SetColor(Color.red);
             }

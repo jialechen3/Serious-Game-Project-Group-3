@@ -2,23 +2,28 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class NPC : MonoBehaviour
+
+public class Npc : MonoBehaviour
 {
-    // Start is called before the first frame update
+    public Spawner spawner;
+    public bool collect = false;
+    
     void Start()
     {
         
     }
 
-    // Update is called once per frame
+    
     void Update()
     {
         
+            
+        
     }
 
-    private void OnTriggerEnter2D(Collider2D collision) {
-        if (collision.tag == "Player") {
-            Debug.Log("Hits");
-        }
+    void OnTriggerEnter2D(Collider2D other) {
+        collect = true; 
+        spawner.SpawnObject();
     }
 }
+
