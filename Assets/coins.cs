@@ -18,7 +18,7 @@ public class coins : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        coinNumbers = PersistentData.Instance.GetCoin();
+        //coinNumbers = PersistentData.Instance.GetCoin();
         GameObject.Find("CoinNumber").GetComponent<TextMeshProUGUI>().SetText(coinNumbers.ToString());
         if (controller == null)
         {
@@ -38,7 +38,7 @@ public class coins : MonoBehaviour
     public void addCoin()
     {
         coinNumbers++;
-        PersistentData.Instance.SetCoin(coinNumbers);
+        //PersistentData.Instance.SetCoin(coinNumbers);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

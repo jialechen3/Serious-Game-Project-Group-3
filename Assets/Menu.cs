@@ -2,11 +2,20 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using TMPro;
+
 public class Menu : MonoBehaviour
 {
+    [SerializeField]  TMP_InputField playerNameInput;
+
+    void Start()
+    {
+        playerNameInput.text = PersistentData.Instance.GetName();
+    }
     public void PlayGame()
     {
-        PersistentData.Instance.SetCoin(0);
+        string playerName = playerNameInput.text;
+        PersistentData.Instance.SetName(playerName);
         SceneManager.LoadScene("Scene_1");
     }
     public void Instruction()
