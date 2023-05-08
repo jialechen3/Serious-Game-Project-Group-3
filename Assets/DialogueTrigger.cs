@@ -6,6 +6,7 @@ public class DialogueTrigger : MonoBehaviour
 {
     public Dialogue1 dialogueScript;
     private bool playerDetected;
+    public GameObject quiz;
 
     //Detect trigger with player
     private void OnTriggerEnter2D(Collider2D collision)
@@ -13,6 +14,7 @@ public class DialogueTrigger : MonoBehaviour
         //If we triggerd the player enable playerdeteced and show indicator
         if(collision.tag == "Player")
         {
+            quiz.SetActive(true);
             playerDetected = true;
             dialogueScript.ToggleIndicator(playerDetected);
         }

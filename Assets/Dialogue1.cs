@@ -26,6 +26,7 @@ public class Dialogue1 : MonoBehaviour
     //Wait for next boolean
     private bool waitForNext;
 
+    
     private void Awake()
     {
         ToggleIndicator(false);
@@ -80,7 +81,7 @@ public class Dialogue1 : MonoBehaviour
         StopAllCoroutines();
         //Hide the window
         ToggleWindow(false);  
-        SceneManager.LoadScene("Quiz");
+        
 
     }
     //Writing logic
