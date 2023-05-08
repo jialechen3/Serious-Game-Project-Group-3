@@ -8,6 +8,8 @@ public class FactsCheckForCorrectAnswer : MonoBehaviour
 {
     [SerializeField] GameObject correctButtonClicked;
     [SerializeField] Button[] buttons;
+    [SerializeField] GameObject currentDesc;
+    [SerializeField] GameObject currentLevel;
     // Start is called before the first frame update
     
     
@@ -28,6 +30,7 @@ public class FactsCheckForCorrectAnswer : MonoBehaviour
         correctButtonClicked.GetComponent<Image>().color = Color.green;
         Invoke("AllWrongAnswers", 1.0f);
         DisableButtons();
+        Invoke("MoveToDescription", 3.0f);
     }
 
     public void WrongAnswerSingle(Button button)
@@ -37,6 +40,7 @@ public class FactsCheckForCorrectAnswer : MonoBehaviour
         Invoke("AllWrongAnswers", 1.0f);
         Invoke("CorrectAnswer", 1.0f);
         DisableButtons();
+        Invoke("MoveToDescription", 3.0f);
     }
 
     public void AllWrongAnswers()
@@ -54,6 +58,12 @@ public class FactsCheckForCorrectAnswer : MonoBehaviour
             g.GetComponent<Button>().enabled = false;
 
         correctButtonClicked.GetComponent<Button>().enabled = false;
+    }
+
+    void MoveToDescription()
+    {
+        currentLevel.SetActive(false);
+        currentDesc.SetActive(true);
     }
 
 }
