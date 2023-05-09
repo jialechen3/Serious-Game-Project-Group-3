@@ -678,6 +678,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1373170583777566326, guid: 684cf57660c98a148ad8f37c02fae6ec, type: 3}
       propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2097495005584097356, guid: 684cf57660c98a148ad8f37c02fae6ec, type: 3}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2257728237963067577, guid: 684cf57660c98a148ad8f37c02fae6ec, type: 3}
@@ -726,6 +730,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 684cf57660c98a148ad8f37c02fae6ec, type: 3}
+--- !u!1 &633332437 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8831007582668118878, guid: 684cf57660c98a148ad8f37c02fae6ec, type: 3}
+  m_PrefabInstance: {fileID: 633332436}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &828275073
 GameObject:
   m_ObjectHideFlags: 0
@@ -1053,7 +1062,7 @@ MonoBehaviour:
   - {fileID: 1716732994}
   - {fileID: 1554382162}
   - {fileID: 2006226760}
-  currentDesc: {fileID: 1517457739}
+  currentDesc: {fileID: 633332437}
   currentLevel: {fileID: 1186296958}
 --- !u!114 &1186296960
 MonoBehaviour:
@@ -1277,11 +1286,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1472175559}
   m_CullTransparentMesh: 1
---- !u!1 &1517457739 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1373170583777566326, guid: 684cf57660c98a148ad8f37c02fae6ec, type: 3}
-  m_PrefabInstance: {fileID: 633332436}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1554382160
 GameObject:
   m_ObjectHideFlags: 0
