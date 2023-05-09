@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class LevelManager : MonoBehaviour
 {
@@ -42,4 +43,21 @@ public class LevelManager : MonoBehaviour
         currentObject.SetActive(false);
         controller.correctAnswer();
     }
+
+    public void GoToLosHotel() {
+        SceneManager.LoadScene("HotelScene");
+    }
+
+    public void HighScore() {
+        SceneManager.LoadScene("ScoreScene");
+    }
+
+    public void GoToFightWithHomeless() {
+        SceneManager.LoadScene("FightScene");
+    }
+
+    public void RejectScene() {
+        SceneManager.LoadScene("RejectScene");
+    }
+
 }

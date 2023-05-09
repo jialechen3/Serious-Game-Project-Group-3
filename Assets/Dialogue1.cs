@@ -130,6 +130,7 @@ public class Dialogue1 : MonoBehaviour
                 //If not end the dialogue process
                 ToggleIndicator(true);
                 EndDialogue();
+                SceneManager.LoadScene("Quiz");
             }            
         }
     }
