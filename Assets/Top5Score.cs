@@ -66,8 +66,8 @@ public class Top5Score : MonoBehaviour
     {
         for (int i = 0; i < NUM_HIGH_SCORES; i++)
         {
-            nameTexts[i].text = "Name " + PlayerPrefs.GetString(NAME_KEY + (i + 1));
-            scoreTexts[i].text = "Score " + PlayerPrefs.GetInt(SCORE_KEY + (i + 1)).ToString();
+            nameTexts[i].text = "Name: " + PlayerPrefs.GetString(NAME_KEY + (i + 1));
+            scoreTexts[i].text = "Score: " + PlayerPrefs.GetInt(SCORE_KEY + (i + 1)).ToString();
         }
     }
 }

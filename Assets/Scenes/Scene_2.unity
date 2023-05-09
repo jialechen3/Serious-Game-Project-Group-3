@@ -45269,9 +45269,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 675246261}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
+      - m_Target: {fileID: 1577985617}
+        m_TargetAssemblyTypeName: Quiz, Assembly-CSharp
+        m_MethodName: TopScore
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -48103,7 +48103,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerName: 
+  score: 0
   nameText: {fileID: 573141315}
+  scoreText: {fileID: 1473271575}
 --- !u!1 &1327867886
 GameObject:
   m_ObjectHideFlags: 0
@@ -48755,9 +48757,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: wrongAnswer
+      - m_Target: {fileID: 1577985617}
+        m_TargetAssemblyTypeName: Quiz, Assembly-CSharp
+        m_MethodName: TopScore
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -49543,9 +49545,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: wrongAnswer
+      - m_Target: {fileID: 1577985617}
+        m_TargetAssemblyTypeName: Quiz, Assembly-CSharp
+        m_MethodName: TopScore
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -49641,6 +49643,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1577985616}
+  - component: {fileID: 1577985617}
   m_Layer: 5
   m_Name: Quiz
   m_TagString: Untagged
@@ -49672,6 +49675,18 @@ RectTransform:
   m_AnchoredPosition: {x: 0.000030517578, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1577985617
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1577985615}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03f244775de1446bd9cda8c6dd434d05, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1581940459
 GameObject:
   m_ObjectHideFlags: 0
@@ -51019,9 +51034,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: correctAnswer
+      - m_Target: {fileID: 1577985617}
+        m_TargetAssemblyTypeName: Quiz, Assembly-CSharp
+        m_MethodName: TopScore
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
