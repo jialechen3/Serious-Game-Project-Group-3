@@ -27,11 +27,12 @@ public class Manager : MonoBehaviour
     void Update()
     {
         score = PersistentData.Instance.GetScore();
-        
+        DisplayScore();
+
     }
     public void ResetGame()
     {
-        Application.LoadLevel(Application.loadedLevel);
+        SceneManager.LoadScene("Scene_2");
     }
 
     
@@ -65,7 +66,7 @@ public class Manager : MonoBehaviour
 
     public void DisplayScore()
     {
-        scoreTxt.text = ": " + score;
+        scoreTxt.text = "Score: " + score.ToString();
         //bulletTxt.text = ": " + bulletNum;
     }
 

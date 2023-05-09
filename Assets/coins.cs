@@ -10,7 +10,7 @@ public class coins : MonoBehaviour
     //Find healthBar
     [SerializeField] private HealthBar healthBar;
 
-    [SerializeField] AudioSource audio;
+    //[SerializeField] AudioSource audio;
 
 
     // Start is called before the first frame update
@@ -20,8 +20,8 @@ public class coins : MonoBehaviour
         {
             controller = GameObject.FindGameObjectWithTag("GameController");
         }
-        if (audio == null)
-            audio = GetComponent<AudioSource>();
+        //if (audio == null)
+          //  audio = GetComponent<AudioSource>();
 
     }
 
@@ -35,7 +35,7 @@ public class coins : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {       
         healthBar.Increase();
-        AudioSource.PlayClipAtPoint(audio.clip, transform.position);
+        //AudioSource.PlayClipAtPoint(audio.clip, transform.position);
         //audio.Play();
         Destroy(gameObject);
         
