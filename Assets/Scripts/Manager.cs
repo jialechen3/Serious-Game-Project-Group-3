@@ -8,6 +8,8 @@ using TMPro;
 public class Manager : MonoBehaviour
 {
     int score;
+    int spScore;
+    [SerializeField] TMP_Text specialScore;
     [SerializeField] TMP_Text scoreTxt;
     public GameObject[] Levels;
     public GameObject ResetScreen,End; 
@@ -17,6 +19,7 @@ public class Manager : MonoBehaviour
     void Start()
     {
         score = PersistentData.Instance.GetScore();
+        spScore = PersistentData.Instance.GetSpScore();
         DisplayScore();
  
     }
@@ -27,6 +30,7 @@ public class Manager : MonoBehaviour
     void Update()
     {
         score = PersistentData.Instance.GetScore();
+        spScore = PersistentData.Instance.GetSpScore();
         DisplayScore();
 
     }
@@ -67,6 +71,7 @@ public class Manager : MonoBehaviour
     public void DisplayScore()
     {
         scoreTxt.text = "Score: " + score.ToString();
+        specialScore.text = spScore.ToString();
         //bulletTxt.text = ": " + bulletNum;
     }
 

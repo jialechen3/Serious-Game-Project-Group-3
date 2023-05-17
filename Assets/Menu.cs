@@ -17,6 +17,7 @@ public class Menu : MonoBehaviour
         string playerName = playerNameInput.text;
         PersistentData.Instance.SetName(playerName);
         PersistentData.Instance.SetScore(0);
+        PersistentData.Instance.SetSpecialScore(0);
         SceneManager.LoadScene("Scene_2");
     }
     public void Instruction()

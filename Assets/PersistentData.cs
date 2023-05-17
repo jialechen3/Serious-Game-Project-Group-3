@@ -6,6 +6,7 @@ public class PersistentData : MonoBehaviour
 {
     [SerializeField] int playerScore;
     [SerializeField] string playerName;
+    [SerializeField] int specialScore;
 
     public static PersistentData Instance;
 
@@ -26,6 +27,7 @@ public class PersistentData : MonoBehaviour
     {
         playerName = "";
         playerScore = 0;
+        specialScore = 0;
         
     }
     public void SetName(string name)
@@ -38,6 +40,11 @@ public class PersistentData : MonoBehaviour
         playerScore = score;
     }
 
+    public void SetSpecialScore(int spScore)
+    {
+        specialScore = spScore;
+    }
+
     public string GetName()
     {
         return playerName;
@@ -46,6 +53,11 @@ public class PersistentData : MonoBehaviour
     public int GetScore()
     {
         return playerScore;
+    }
+
+    public int GetSpScore()
+    {
+        return specialScore;
     }
     // Update is called once per frame
     void Update()
