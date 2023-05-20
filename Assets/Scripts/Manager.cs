@@ -11,8 +11,8 @@ public class Manager : MonoBehaviour
     int spScore;
     [SerializeField] TMP_Text specialScore;
     [SerializeField] TMP_Text scoreTxt;
-    public GameObject[] Levels;
-    public GameObject ResetScreen,End; 
+    
+    
     
     int currentLevel;
 
@@ -40,23 +40,14 @@ public class Manager : MonoBehaviour
     }
 
     
-    public void correctAnswer()
-    {
-        AddPoints();
-        if(currentLevel + 1 != Levels.Length)
-        {
-            Levels[currentLevel].SetActive(false);
-
-            currentLevel++;
-            Levels[currentLevel].SetActive(true);
-        }
-        else
-        {
-            Levels[currentLevel].SetActive(false);
-           
-        }
+    
+    public void DeductPoints() {
+        score -= 1;
+        PersistentData.Instance.SetScore(score);
+        Debug.Log("Score: " + score);
+        DisplayScore();
     }
-
+    
     public void AddPoints() {
         score += 1;
         PersistentData.Instance.SetScore(score);

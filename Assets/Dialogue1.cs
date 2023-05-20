@@ -25,6 +25,7 @@ public class Dialogue1 : MonoBehaviour
     private bool started;
     //Wait for next boolean
     private bool waitForNext;
+    public GameObject quiz;
 
     
     private void Awake()
@@ -126,11 +127,15 @@ public class Dialogue1 : MonoBehaviour
                 GetDialogue(index);
             }
             else
-            {
+            {   
+                if (quiz != null) {
+                    quiz.SetActive(true);
+                    Destroy(gameObject);
+                }
                 //If not end the dialogue process
-                ToggleIndicator(true);
-                EndDialogue();
-                SceneManager.LoadScene("Quiz");
+                else {
+                    Destroy(gameObject);
+                }
             }            
         }
     }

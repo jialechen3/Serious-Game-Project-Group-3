@@ -11,6 +11,7 @@ public class LevelManager : MonoBehaviour
     public GameObject B;
     public GameObject C;
     public GameObject D;
+    public GameObject infor;
     private GameObject currentObject;
 
     private void Answer(GameObject str) {
@@ -35,15 +36,20 @@ public class LevelManager : MonoBehaviour
     }
     
     public void GoBack() {
-        currentObject.SetActive(false);
-        currentLevel.SetActive(true);
+        infor.SetActive(false);
     }
 
-    public void GoNext() {
+    public void GoNextRight() {
         currentObject.SetActive(false);
-        controller.correctAnswer();
+        infor.SetActive(true);
+        controller.AddPoints();
     }
 
+    public void GoNextWrong() {
+        currentObject.SetActive(false);
+        infor.SetActive(true);
+        controller.DeductPoints();
+    }
     public void GoToLosHotel() {
         SceneManager.LoadScene("HotelScene");
     }
