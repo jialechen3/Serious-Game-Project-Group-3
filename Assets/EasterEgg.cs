@@ -14,7 +14,7 @@ public class EasterEgg : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        spScore = PersistentData.Instance.GetSpScore();
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
