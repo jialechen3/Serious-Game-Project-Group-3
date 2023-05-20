@@ -576,7 +576,7 @@ RectTransform:
   m_Children:
   - {fileID: 1565747035}
   m_Father: {fileID: 805335335}
-  m_RootOrder: 6
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -652,7 +652,7 @@ RectTransform:
   m_Children:
   - {fileID: 1447831593}
   m_Father: {fileID: 805335335}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -45320,7 +45320,7 @@ RectTransform:
   - {fileID: 158012805}
   - {fileID: 899939482}
   m_Father: {fileID: 805335335}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -46077,6 +46077,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f6a7a2f835c7d42959f6420e2acb5173, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pause: {fileID: 440383123}
+  toSetting: {fileID: 2090393817}
+  backToPause: {fileID: 899939481}
   isPaused: 0
   pauseMenu: {fileID: 563389991}
   shopMenu: {fileID: 0}
@@ -46155,12 +46158,12 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 221924275}
+  - {fileID: 163224857}
   - {fileID: 563389994}
   - {fileID: 199388719}
   - {fileID: 1905808025}
   - {fileID: 1577985616}
   - {fileID: 1884752253}
-  - {fileID: 163224857}
   m_Father: {fileID: 0}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -47771,7 +47774,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76c392e42b5098c458856cdf6ecaaaa1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_FirstSelected: {fileID: 0}
+  m_FirstSelected: {fileID: 440383123}
   m_sendNavigationEvents: 1
   m_DragThreshold: 10
 --- !u!4 &1237779363
@@ -49202,10 +49205,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Navigation:
-    m_Mode: 3
+    m_Mode: 4
     m_WrapAround: 0
-    m_SelectOnUp: {fileID: 0}
-    m_SelectOnDown: {fileID: 0}
+    m_SelectOnUp: {fileID: 2090393820}
+    m_SelectOnDown: {fileID: 2090393820}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
@@ -49213,7 +49216,7 @@ MonoBehaviour:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_SelectedColor: {r: 0.7075472, g: 0.377136, b: 0.377136, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -49973,7 +49976,7 @@ RectTransform:
   - {fileID: 1651236617}
   - {fileID: 432862661}
   m_Father: {fileID: 805335335}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -50927,7 +50930,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 805335335}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -51096,7 +51099,7 @@ RectTransform:
   m_GameObject: {fileID: 1905808022}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.01, y: 1.01, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1484760324}
@@ -51104,7 +51107,7 @@ RectTransform:
   - {fileID: 1327867887}
   - {fileID: 578030910}
   m_Father: {fileID: 805335335}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -51629,18 +51632,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Navigation:
-    m_Mode: 3
+    m_Mode: 4
     m_WrapAround: 0
-    m_SelectOnUp: {fileID: 0}
-    m_SelectOnDown: {fileID: 0}
+    m_SelectOnUp: {fileID: 1484760325}
+    m_SelectOnDown: {fileID: 1484760325}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
-    m_NormalColor: {r: 0.8679245, g: 0.1514774, b: 0.1514774, a: 1}
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9150943, g: 0.64315593, b: 0.64315593, a: 1}
     m_PressedColor: {r: 1, g: 0.43867922, b: 0.43867922, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_SelectedColor: {r: 0, g: 0.26686534, b: 0.8396226, a: 1}
     m_DisabledColor: {r: 0.18867922, g: 0.1699893, b: 0.1699893, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1

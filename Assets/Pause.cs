@@ -2,9 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.EventSystems;
 public class Pause : MonoBehaviour
 {
-
+    [SerializeField] public GameObject pause, toSetting, backToPause;
     public bool isPaused = false;
 
     public GameObject pauseMenu;
@@ -32,6 +33,10 @@ public class Pause : MonoBehaviour
         pauseMenu.SetActive(true);
         Time.timeScale = 0f;
         isPaused = true;
+
+        EventSystem.current.SetSelectedGameObject(null);
+        EventSystem.current.SetSelectedGameObject(pause);
+
     }
     public void ResumeGame()
     {
@@ -65,9 +70,13 @@ public class Pause : MonoBehaviour
     public void ToSetting()
     {
         settingMenu.SetActive(true);
+        EventSystem.current.SetSelectedGameObject(null);
+        EventSystem.current.SetSelectedGameObject(toSetting);
     }
     public void BackToPause()
     {
         settingMenu.SetActive(false);
+        EventSystem.current.SetSelectedGameObject(null);
+        EventSystem.current.SetSelectedGameObject(backToPause);
     }
 }
