@@ -24,6 +24,14 @@ public class Ending : MonoBehaviour
             Door.SetActive(true);
         }
 
+        if(Door.activeSelf == true)
+        {
+            if (Input.GetKeyDown(KeyCode.Return))
+            {
+                End();
+            }
+        }
+
     }
     public void End()
     {
