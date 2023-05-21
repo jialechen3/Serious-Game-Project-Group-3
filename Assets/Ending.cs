@@ -8,6 +8,8 @@ public class Ending : MonoBehaviour
 {
     [SerializeField] TMP_Text instructionTexts;
     private bool playerDetected;
+    public GameObject Door;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -19,9 +21,14 @@ public class Ending : MonoBehaviour
     {
         if (playerDetected && Input.GetKeyDown(KeyCode.E))
         {
-            SceneManager.LoadScene("ScoreScene");
+            Door.SetActive(true);
         }
 
+    }
+    public void End()
+    {
+        Door.SetActive(false);
+        SceneManager.LoadScene("ScoreScene");
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -29,7 +36,7 @@ public class Ending : MonoBehaviour
         if (collision.tag == "Player")
         {
             playerDetected = true;
-            instructionTexts.text = "Back To Home";
+            instructionTexts.text = "Back To Home Press E";
 
         }
     }

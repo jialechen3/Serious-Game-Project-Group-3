@@ -5,6 +5,7 @@ using UnityEngine;
 public class School : MonoBehaviour
 {
     public GameObject school;
+    public GameObject donation;
     BoxCollider2D _school;
 
     // Start is called before the first frame update
@@ -23,15 +24,20 @@ public class School : MonoBehaviour
         //If we triggerd the player enable playerdeteced and show indicator
         if (collision.tag == "Player")
         {
-            inSchool();
+            inDonation();
             
         }
     }
-    public void inSchool()
+    public void inDonation()
     {
-        school.SetActive(true);
+        donation.SetActive(true);
     }
     public void existPic1()
+    {
+        donation.SetActive(false);
+        school.SetActive(true);
+    }
+    public void existPic2()
     {
         school.SetActive(false);
         _school.enabled = !_school.enabled;
