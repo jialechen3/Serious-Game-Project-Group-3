@@ -16,7 +16,11 @@ public class Job : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        if (job.activeSelf == true)
+        {
+            if (Input.GetKeyDown(KeyCode.Return))
+                existPic1();
+        }
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {

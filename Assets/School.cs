@@ -17,7 +17,21 @@ public class School : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (school.activeSelf == true)
+        {
+            if (Input.GetKeyDown(KeyCode.Return))
+            {
+                existPic2();
+            }
+        }
+
+        if (donation.active == true)
+        {
+            if (Input.GetKeyDown(KeyCode.Return))
+            {
+                existPic1();
+            }
+        }
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
