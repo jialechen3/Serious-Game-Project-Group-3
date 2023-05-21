@@ -7,6 +7,11 @@ TagManager:
   - Ground
   - NPC
   - Easter Egg
+  - WrongChoice
+  - CorrectChoice
+  - Story
+  - Instructions
+  - InstructionScene
   layers:
   - Default
   - TransparentFX
