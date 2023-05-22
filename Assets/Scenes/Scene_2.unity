@@ -368,11 +368,11 @@ MonoBehaviour:
   dialogueText: {fileID: 242888906}
   dialogues:
   - Lily
-  - Sorry I can't affort to pay rent right now
+  - Sorry I can't afford to pay rent right now
   - You are on your own now
   - Forgive me my child
   - I have to leave you alone
-  - Because the drug addition  is killing me
+  - Because the drug addiction  is killing me
   - Go find a shelter to live in
   writingSpeed: 0
   quiz: {fileID: 1453893292}
@@ -59647,9 +59647,9 @@ MonoBehaviour:
   dialogueText: {fileID: 1911913268}
   dialogues:
   - It is hard to live in the shelter
-  - I am tried of the digusting smells
-  - I rather sleep on the street
-  - Are you now to town?
+  - I am tired of the digusting smells
+  - I'd rather sleep on the street
+  - Are you new to town?
   - Be aware of the dangers out here
   - Good luck
   writingSpeed: 0
