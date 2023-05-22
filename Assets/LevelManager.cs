@@ -16,6 +16,17 @@ public class LevelManager : MonoBehaviour
     public int numChoices;
 
 
+    
+    [SerializeField] Journal journalScript;
+    private void Start()
+    {
+        if(journalScript == null)
+        {
+            journalScript = GameObject.FindObjectOfType<Journal>();
+        }
+        
+    }
+
     //this will allow players to use the keyboard during quiz and fact scenes
     //1 = a, 2 = b, 3 = c. 4 = d
     //Numeric keypad = Keypad
@@ -88,17 +99,20 @@ public class LevelManager : MonoBehaviour
     
     public void GoBack() {
         infor.SetActive(false);
+        journalScript.SwapPages();
     }
 
     public void GoNextRight() {
         currentObject.SetActive(false);
         infor.SetActive(true);
+        
         controller.AddPoints();
     }
 
     public void GoNextWrong() {
         currentObject.SetActive(false);
         infor.SetActive(true);
+        
         controller.DeductPoints();
     }
     public void GoToLosHotel() {

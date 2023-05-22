@@ -12,6 +12,7 @@ TagManager:
   - Story
   - Instructions
   - InstructionScene
+  - diary
   layers:
   - Default
   - TransparentFX
