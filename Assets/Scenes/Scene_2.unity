@@ -368,11 +368,11 @@ MonoBehaviour:
   dialogueText: {fileID: 242888906}
   dialogues:
   - Lily
-  - Sorry I can't affort to pay rent right now
+  - Sorry I can't afford to pay rent right now
   - You are on your own now
   - Forgive me my child
   - I have to leave you alone
-  - Because the drug addition  is killing me
+  - Because the drug addiction  is killing me
   - Go find a shelter to live in
   writingSpeed: 0
   quiz: {fileID: 1453893292}
@@ -49349,8 +49349,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 769279794}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.29999924, y: 0.71000004, z: 0.03743884}
-  m_LocalScale: {x: 2.9407682, y: 3.5325854, z: 16.326164}
+  m_LocalPosition: {x: 0.9693, y: 0.0938, z: 0.03743884}
+  m_LocalScale: {x: 3.4803994, y: 5.733386, z: 16.326164}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1253757754}
@@ -59647,9 +59647,9 @@ MonoBehaviour:
   dialogueText: {fileID: 1911913268}
   dialogues:
   - It is hard to live in the shelter
-  - I am tried of the digusting smells
-  - I rather sleep on the street
-  - Are you now to town?
+  - I am tired of the digusting smells
+  - I'd rather sleep on the street
+  - Are you new to town?
   - Be aware of the dangers out here
   - Good luck
   writingSpeed: 0
