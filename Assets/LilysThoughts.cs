@@ -192,9 +192,11 @@ public class LilysThoughts : MonoBehaviour
             "\n\tMove Left = Left Arrow < or \"A\"" +
             "\n\tMove Right = Right Arrow > or \"D\"" +
             "\n\nTo Interact with NPC's:" +
-            "\n\tPress \"E\"";
+            "\n\tPress \"E\"" +
+            "\n\nTo Interact with your Diary: " +
+            "\n\tPress \"R\"";
 
-            instructions.fontSize = 36;
+            instructions.fontSize = 27;
 
             previousButton.SetActive(false);
             
