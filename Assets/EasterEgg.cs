@@ -16,7 +16,7 @@ public class EasterEgg : MonoBehaviour
     {
         spScore = PersistentData.Instance.GetSpScore();
     }
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
         spScore = spScore + 1;
         PersistentData.Instance.SetSpecialScore(spScore);

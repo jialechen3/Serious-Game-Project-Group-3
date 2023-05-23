@@ -12,6 +12,8 @@ public class LevelManager : MonoBehaviour
     public GameObject C;
     public GameObject D;
     public GameObject infor;
+    public AudioSource src;
+    public AudioClip clip;
     private GameObject currentObject;
     public int numChoices;
 
@@ -24,6 +26,7 @@ public class LevelManager : MonoBehaviour
         {
             journalScript = GameObject.FindObjectOfType<Journal>();
         }
+        src.clip = clip;
         
     }
 
@@ -77,6 +80,7 @@ public class LevelManager : MonoBehaviour
 
 
     private void Answer(GameObject str) {
+        src.Play();
         currentObject = str;
         currentLevel.SetActive(false);
         str.SetActive(true);
@@ -98,11 +102,13 @@ public class LevelManager : MonoBehaviour
     }
     
     public void GoBack() {
+        src.Play();
         infor.SetActive(false);
         journalScript.SwapPages();
     }
 
     public void GoNextRight() {
+        src.Play();
         currentObject.SetActive(false);
         infor.SetActive(true);
         
@@ -110,6 +116,7 @@ public class LevelManager : MonoBehaviour
     }
 
     public void GoNextWrong() {
+        src.Play();
         currentObject.SetActive(false);
         infor.SetActive(true);
         
