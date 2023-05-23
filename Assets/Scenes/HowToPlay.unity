@@ -542,8 +542,10 @@ MonoBehaviour:
 
     Press "E" To Interact with NPC.
 
-    Press "Enter" to active
-    selected.
+    Press "R" To Open Diary.
+
+    Press
+    "Enter" to active selected.
 
     Try your best to get your highscore!'
   m_isRightToLeft: 0
